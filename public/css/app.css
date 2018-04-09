@@ -1,0 +1,549 @@
+/* ----- General ----- */
+html {
+    position: relative;
+    min-height: 100%;
+    font-size: 20px;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "arial";
+	background-color: #F3F3F1;
+}
+/* ----- Header ----- */
+#logo{
+	text-align: center;
+	background-color: white;
+}
+
+#logo img{
+	display: inline-block;
+	height: 100px;
+	width: auto;
+	text-align: center;
+	font-size: 20px;
+	background-color: white; 
+}
+
+#header {
+	background-color: rgb(255, 203, 73);
+	text-align: center;
+	font-size: 20px;
+	padding: 0px 0px;
+}
+
+#header nav ul{
+	background-color: rgb(255, 203, 73);
+    padding:0px;
+    margin: 0px;
+    list-style:none;
+	display:flex;
+}
+
+#header nav li {
+    position: relative;
+    flex:1;
+
+}
+
+#header nav a{
+	display: block;
+	padding: 12px 0px;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	font-size: 18px;
+}
+
+#header nav li:hover > a{
+    background-color:black;
+    color:white;
+}
+
+#header nav > ul > li > ul{
+    top: 100%;
+    left: 0;
+}
+
+#header nav ul ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width:100%;
+    box-sizing: border-box;
+}
+
+#header nav li:hover > ul {
+    display: block;
+}
+
+#header nav ul ul.magNie{
+    display:none;
+}
+
+#salade{
+	padding: 40px 0px;
+	height: 400px;
+	width: 100%;
+	background-image: url(/img/salade.jpg);
+	background-repeat: no-repeat;
+	background-color: #EEE;
+	background-size: cover;	
+	text-align: center;
+	font-size: 50px;
+}
+
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow:hidden;
+	background-color: rgb(255, 203, 73);
+	text-align: center;
+	vertical-align: center;
+	padding: 20px 0;
+}
+
+#container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    margin: 20px auto;
+}
+
+#container h3{
+	margin-top: 0px;
+}
+
+#infoContainer{
+	width: 90%;
+	margin: 50px auto;
+	margin-bottom: 100px;
+}
+/* ----- BreadCurms ----- */
+#productBreadcrums h6{
+	margin: 0px 0px 10px 0px;
+}
+
+#productBreadcrums h2{
+	margin: 0px;
+}
+/* ----- Home & About ----- */
+#content{
+	width: 40%;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+#smile{
+	width: 60%;
+	min-width: 300px;
+}
+
+#smile img{
+	width: 100%;
+	height: auto;
+}
+
+/* ----- Categorie ----- */
+
+.categorie{
+	height: 40px;
+	width: 30%;
+	box-sizing: border-box;
+	min-width: 250px;
+	position: relative;
+    color: white;
+    display: inline-block;
+	margin-right: 3.33%;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.categorie:hover{
+	background-color: #D0A32F;
+	box-shadow: 0 8px 16px 0 #D0A32F, 0 12px 40px 0 #D0A32F;
+}
+
+.categorieText {
+	width: 100%;
+	height: 40px;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    color: black;
+	margin-right: -10px;
+	line-height: 40px;
+}
+
+#categorieen{
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px auto;
+}
+
+/* ----- PRODUCT ----- */
+
+#ProductSalade{
+	height: 400px;
+	width: 100%;
+	background-image: url(/img/shakeHeader.jpg);
+	background-repeat: no-repeat;
+	background-color: #EEE;
+	background-size: cover;	
+	text-align: center;
+	font-size: 50px;
+	padding: 40px 0px 0px 0px;
+	box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box;
+
+}
+
+#ProductSalade h1{
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box; 
+	color: black;
+}
+
+
+#ProductSalade a{
+	padding-top: 20px;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: black;
+
+}
+
+#productOmschrijving{
+	padding-left: 5%;
+	width: 55%;
+}
+
+#productOmschrijving h3{
+	margin-top: 0px;
+}
+
+#product{
+	min-width: 200px; 
+	overflow: hidden;
+	width: 40%;
+	height: auto;
+	text-decoration: none;
+}
+
+#product a {
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+a:-webkit-any-link {
+    color: black;
+    text-decoration: none !important;
+}
+
+#detailProdcutImage{
+  	width: 100%;
+  	height: auto;
+}
+
+#productBreadcrums{
+	width: auto;
+	margin: 0px;
+}
+
+/* ----- PRODUCTINFO ----- */
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #303030;
+    color: white;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	cursor: pointer;
+}
+
+.button:hover {
+    background-color: #303030;
+}
+/* ----- Register screen ----- */
+.header {
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 50px;
+	color: white;
+	background: #5F9EA0;
+	text-align: center;
+
+	padding: 0px 0px;
+	box-shadow: 0 8px 16px 0 black, 0 12px 40px 0 black;
+
+  }
+
+  .header > h2{
+	  padding: 10px;
+	  margin: 0px;
+  }
+
+/* ----- ProductenOverview ----- */
+
+#productenContainer{
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+#infoLeft{
+	float: left;
+	width: 300px;
+}
+
+#productenGrid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.product{
+	border-color: #2F3447;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	width: 23.5%;
+	margin: 0px 2% 20px 0px;
+	color: black;
+	font-size: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	height: 425px;
+	background-color: #88B892;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product h3{
+	margin-top: 0px;
+}
+
+.product:hover{
+	background-color: #D0A32F;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product > h3{
+	padding-left: 4px;
+	margin: 10px 0px 10px 0px; 
+	color: black;
+	font-size: 25px;
+}
+
+.product > h4{
+
+	padding-left: 4px;
+	margin: 10px 0px 10px 0px; 
+	color: black;
+	font-size: 18px;
+}
+
+#productPlaatje{
+	width: 100%;
+	height: auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 280px;
+	border-color: #2F3447;
+	border-style: solid;
+	border-width: 0px 0px 2px 0px;
+}
+
+.product:nth-child(4n){
+	margin-right: 0px;
+}
+
+  
+  .input-group {
+	margin: 10px 0px 10px 0px;
+  }
+  .input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+  }
+  .input-group input {
+	height: 30px;
+	width: 100%;
+	padding: 5px 0px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+  }
+  .btn {
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 15px;
+	color: white !important;
+	background: black;
+	border: none;
+  }
+
+  .error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+  }
+
+
+/* ----- CART -----*/
+.formWidth {
+	padding: 0px;
+	margin-right: 10px; 
+	display: inline;
+}
+
+.cartItem{
+	width: 100%;
+}
+
+/* ----- BACKEND ----- */
+
+#adminMenu {
+    background-color: #303030;
+	padding: 0, auto;
+	font-size: 20px;
+	width: 200px;
+}
+
+#adminMenu nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	overflow: hidden;
+}
+
+#adminMenu nav li {
+	margin: 0px;
+	width: 100%;
+}
+
+#adminMenu nav li a {
+	padding: 10px 0px 10px 10px;
+	width: 100%;
+	text-align: left;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#adminMenu nav li a:hover {
+    background-color: #4CAF50;
+}
+#adminHeader{
+	background-color: #4CAF50;
+}
+
+#adminHeader nav{
+	height: 40px;
+	color: white;
+	text-align: center;
+	justify-content: center;
+	margin: 0px auto;
+	list-style: none;
+	display: table;
+	flex-wrap: wrap;
+}
+
+#adminHeader ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	height: 40px;
+	width: 100%;
+	justify-content: center;
+}
+
+#adminHeader li {
+	height: 100%;
+	margin: 0px 10px;
+	display: table;
+	justify-content: center;
+	list-style: none;
+	text-align: center; 
+	float: left;
+
+}
+
+#adminHeader li a {
+	color: black;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+#adminContainer{
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+#adminLeft{
+	float: left;
+	width: 200px;
+}
+
+#adminContent{
+	padding: 25px;
+	width: 100%;
+}
+
+#adminContent > h3{
+	margin-top: 0px;
+}
